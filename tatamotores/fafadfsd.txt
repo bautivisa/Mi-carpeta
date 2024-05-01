@@ -1,0 +1,46 @@
+<!-- <?php
+    $conexion = new mysqli('localhost', 'root', '', 'concesionaria');
+
+    if(!$conexion){
+        echo $conexion->error;
+    }
+
+    if($conexion){
+        $consulta = "SELECT * From Articulos";
+        $resultado = mysqli_query($conexion,$consulta);
+
+        if($resultado){
+            while($row = $resultado->fetch_array()){
+                $precio1 = $row['precio1'];
+                $precio2 = $row['precio2'];
+                $precio3 = $row['precio3'];
+                $precio4 = $row['precio4'];
+            }
+        }
+    }
+?>
+while($datos = $res->fetch_assoc()){
+    echo "<div>";
+    echo "<img src='img/$datos[foto]' width=100>";
+    echo "<h3>$datos[titulo]</h3>";
+    echo "<p>$datos[genero]</p>";
+    echo "</div>";
+}
+
+<?php
+$conexion = new mysqli('localhost', 'root', '', 'mi base de datos');
+
+if(!$conexion){
+    echo $conexion->error;
+}
+
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
+$dni = $_POST['dni'];
+
+$consulta = "INSERT INTO persona(Nombre, Apellido, DNI) VALUES('$nombre', '$apellido', '$dni')";
+
+$conexion->query($consulta);
+
+echo"Datos Enviados";
+?> -->

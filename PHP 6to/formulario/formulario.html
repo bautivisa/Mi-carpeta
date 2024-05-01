@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="enviarmail.php">
+
+       <h3>Informacion Basica</h3>
+
+
+        <label for="NomApell">Nombre y Apellido:</label>
+        <input type="text" name="NomApell">
+
+        <label for="Genero">Genero:</label>
+        <select name="genero">
+            <option value=""></option>   
+            <option value="masculino">MASCULINO</option>   
+            <option value="femenino">FEMENINO</option>   
+        </select>
+
+        <label for="DNI">DNI:</label>
+        <input type="text" name="DNI">
+
+        <label for="Email">Dirección de E-mail:</label>
+        <input type="email" name="email">
+         
+        <h3>Actividades</h3>
+
+        <p>Zumba</p>
+        <label for="actividad1"></label>
+        <input type="checkbox" name="actividad">
+
+        <p>Pesas</p>
+        <label for="actividad2"></label>
+        <input type="checkbox" name="actividad">
+
+        <p>Cardio</p>
+        <label for="actividad3"></label>
+        <input type="checkbox" name="actividad">
+
+        <p>Tela</p>
+        <label for="actividad4"></label>
+        <input type="checkbox" name="actividad">
+        
+        <label for="FotDNI">Foto del DNI</label>
+        <input type="file" name="FotDNI">
+
+        <label for="Comentario">Comentario</label>
+        <input type="text" name="Comentario">
+
+        <input type="submit" value="Enviar">        
+
+    </form>
+</body>
+</html>
+<!-- 1)  REALIZAR UNA PAGINA FORMULARIO DE INSCRIPCION A CURSOS QUE RECIBA LOS DATOS PERSONALES
+ genero
+ actividad
+ fot.dni
+ NO
+ 
+
+LOS COLORES Y DISEÑO DEL SITIO DEBERAN SER ACORDES A LA ACTIVIDAD QUE UDS ELIJAN ( GIMNASIO, CURSOS DE COCINA , CURSOS DE PROGRAAMCION , ETC ) 
+ENVIO DE FORMULARIO A TRAVES  DE ARCHIVO  SENDMAIL.PHP  (ES EL QUE EJECUTA LA ACCION )
+ EL FORMULARIO SERA ENVIADO POR MAILA SU DIRECCION DE CORREO
+
+CONVERTIR LOS DATOS DEL FORMULARIO EN VARIABLES
+
+extra : (VALIDAR QUE SE TRATA DE UN CORREO ) -->
+
+<!-- el name de los <label for="nombre variable"></label> son variables para trabaja en PHP -->
