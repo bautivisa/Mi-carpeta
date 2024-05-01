@@ -34,7 +34,6 @@
         <input type="tel" name="telefono">
         <br><br>
         <input type="submit">
-        <br><br>
         <input type="reset">
         
     </form>  
